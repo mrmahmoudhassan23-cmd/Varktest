@@ -146,7 +146,7 @@ export default function TeacherPage() {
       <main className="shell">
         <section className="card teacher-login-card">
           <div className="teacher-logo-wrap">
-            <img src="/ebis-logo.svg" alt="EBIS" className="teacher-logo" />
+            <img src="/ebis-logo.jpg" alt="EBIS" className="teacher-logo" />
             <span className="teacher-logo-label">EBIS • VARK TEST</span>
           </div>
           <div className="brand">
@@ -178,7 +178,7 @@ export default function TeacherPage() {
     <main className="dashboard">
       <header className="teacher-topbar">
         <div className="teacher-brand-inline">
-          <img src="/ebis-logo.svg" alt="EBIS" className="teacher-logo teacher-logo-inline" />
+          <img src="/ebis-logo.jpg" alt="EBIS" className="teacher-logo teacher-logo-inline" />
           <div><span className="badge">EBIS • TEACHER PORTAL</span><div className="teacher-brand-name">VARK Test</div></div>
         </div>
         <button className="secondary" onClick={() => supabase.auth.signOut()}>Sign out</button>
