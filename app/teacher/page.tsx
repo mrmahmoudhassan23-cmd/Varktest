@@ -89,8 +89,7 @@ export default function TeacherPage() {
     <main className="shell">
       <section className="card teacher-login-card">
         <div className="teacher-logo-wrap">
-          <img src="/ebis-logo.svg" alt="EBIS" className="teacher-logo" />
-          <span className="teacher-logo-label">EBIS • VARK TEST</span>
+          <img src="/vark-logo.svg" alt="VARK Test" className="teacher-logo" />
         </div>
         <div className="brand"><span className="badge">TEACHER PORTAL</span><h1>VARK Learning Profile</h1><p className="muted">Teacher access only.</p></div>
         {signup && <>
@@ -109,7 +108,7 @@ export default function TeacherPage() {
 
   return <main className="dashboard">
     <header className="teacher-topbar">
-      <div className="teacher-brand-inline"><img src="/ebis-logo.svg" alt="EBIS" className="teacher-logo teacher-logo-inline" /><div><span className="badge">EBIS • TEACHER PORTAL</span><div className="teacher-brand-name">VARK Test</div></div></div>
+      <div className="teacher-brand-inline"><img src="/vark-logo.svg" alt="VARK Test" className="teacher-logo teacher-logo-inline" /><div><span className="badge">VARK • TEACHER PORTAL</span><div className="teacher-brand-name">VARK Test</div></div></div>
       <button className="secondary" onClick={() => supabase.auth.signOut()}>Sign out</button>
     </header>
     <header className="dashhead"><div><h1>Welcome, {profile.title} {profile.display_name}</h1><p className="muted">My Dashboard{profile.subject ? <> • {profile.subject}</> : null}</p></div></header>
