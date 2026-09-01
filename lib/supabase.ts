@@ -6,4 +6,4 @@ import { createClient } from '@supabase/supabase-js';
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://mgprlouwtoawlswvupjf.supabase.co';
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_PYMTglQNK7FVGRkYcJ_lGw_k8Eo0xiT';
 
-export const supabase = createClient(supabaseUrl, supabaseKey);
+export const supabase = createClient(supabaseUrl, supabaseKey, {\n  auth: {\n    persistSession: true,\n    autoRefreshToken: true,\n    detectSessionInUrl: true,\n  },\n});
